@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+
+}
+@font-face {
+    font-family: 'Concert One', cursive;
+    src: url(../fonts/ConcertOne-Regular.ttf);
+}
+.container{
+    max-width: 1260px;
+    margin: 0 auto;
+}
+.first{
+    font-weight: 900;
+    font-size: 64px;
+    text-align: center;
+    letter-spacing: 10px; 
+    color: #242424;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    
+}
+body{
+    font-family: 'Concert One', cursive;
+}
+.second{
+    margin-left: 48%;
+}
+.boxs{
+    display: -ms-grid;
+    display: grid;
+    gap: 40px 35px;
+    margin-top: 60px;
+        grid-template-areas: "box1 box2 box3" "box4 box5 box6" " box7 box8 box9";
+}
+.box{
+    min-width: 410px;
+    min-height: 584px;
+    border: 1px solid rgb(231, 225, 225);
+    border-radius: 15px;
+}
+
+.boxs:nth-child(1){
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: box1;
+}
+.boxs:nth-child(2){
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: box2;
+}
+.boxs:nth-child(3){
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    grid-area: box3;
+}
+.boxs:nth-child(4){
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: box4;
+}
+.boxs:nth-child(5){
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    grid-area: box5;
+}
+.boxs:nth-child(6){
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    grid-area: box6;
+}
+.boxs:nth-child(7){
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: box7;
+}
+.boxs:nth-child(8){
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+    grid-area: box8;
+}
+.boxs:nth-child(9){
+    -ms-grid-row: 5;
+    -ms-grid-column: 5;
+    grid-area: box9;
+}
+.box__title{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px; 
+    text-transform: capitalize;
+    -webkit-font-feature-settings: 'tnum' on, 'lnum' on;
+            font-feature-settings: 'tnum' on, 'lnum' on; 
+    color: #242424; 
+    margin: 15px 0 0 20px;
+}
+.box__text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #AAAAAA; 
+    margin: 15px 0 0 20px;
+}
+.box__end{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 200px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.box__end-red{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    color: #BB2339;
+    
+}
+.box__end-number{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #242424;    
+    opacity: 0.5; 
+}
+.btn{
+    background: none;
+    border: 1px solid red;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 90px 570px;
+}
+.end__wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 64px 252px;
+    gap: 64px;
+    background: #BB2339;
+    -webkit-box-shadow: 22px 30px 95px 1px rgba(86, 86, 86, 0.2);
+            box-shadow: 22px 30px 95px 1px rgba(86, 86, 86, 0.2);
+    border-radius: 20px;
+
+}
+.end__first{
+    font-weight: 700;
+    font-size: 23px;
+    color: #fff;
+    line-height: 130%;
+    text-transform: capitalize;
+      
+}  
+.end__title{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 130%;  
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;  
+}
+
+.end__text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    text-align: center; 
+    color: #FFFFFF;   
+}
+.end__input{
+    width: 635px;
+    height: 52px;
+    border: 1px solid rgba(245, 239, 219, 0.5);
+    border-radius: 100px;
+    background: none;
+    opacity: 1;
+    padding-left: 20px;
+    color: #AAAAAA;
+}
+.end__btn{
+    background: #BB2339;
+    -webkit-box-shadow: 22px 30px 95px 1px rgba(86, 86, 86, 0.2);
+            box-shadow: 22px 30px 95px 1px rgba(86, 86, 86, 0.2);
+    border-radius: 30px; 
+    padding: 15px 15px;
+    border: 1px solid wheat;
+    color: #fff;
+}
